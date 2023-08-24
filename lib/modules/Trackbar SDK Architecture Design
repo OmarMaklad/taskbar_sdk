@@ -1,0 +1,37 @@
+Trackbar SDK Architecture Design:
+
+1. Sensor Abstraction Layer:
+   - Methods: connectToSensor, startSensor, getDataPoint, stopSensor
+
+2. Sensor Controllers:
+   - RadarSensorController
+   - Implement methods from the abstraction layer
+   - Use communication interfaces for sensor interaction
+
+3. Communication Interface:
+   - BLE Communication Manager
+   - Handle communication with sensors
+
+4. Data Processing:
+   - Process raw sensor data
+   - Apply algorithms for meaningful results
+
+5. Client Application (Flutter):
+   - Utilize SDK methods for sensor interaction
+   - UI components for user interaction
+
+6. SDK Core Logic:
+   - Implement the sensor abstraction layer
+   - Manage communication, data processing, and interactions
+
+7. SDK Configuration:
+   - Allow clients to set preferences
+   - Configure data processing, communication, etc.
+
+8. Error Handling and Logging:
+   - Log errors and events
+   - Provide meaningful error messages for troubleshooting
+
+9. Future Expansion:
+   - Designed for scalability and addition of new sensor types
+
